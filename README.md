@@ -3,7 +3,7 @@
 An English learning platform. It has a list of all letters and images of animals.
 
 
-[Software Demo Video](https://www.youtube.com/watch?v=Aj8y0BOi4us)
+[Software Demo Video](https://www.youtube.com/watch?v=xcL9A5tKGbs)
 # Development Environment
 
 * Visual Studio Code
