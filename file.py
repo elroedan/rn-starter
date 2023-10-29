@@ -1,25 +1,11 @@
-import os
+import random
 
-def list_files_in_directory(directory_path):
-    file_list = []
+# Create an empty list to store the random numbers
+random_number_list = []
 
-    # Check if the directory exists
-    if os.path.exists(directory_path) and os.path.isdir(directory_path):
-        # List all files in the directory
-        for filename in os.listdir(directory_path):
-            if os.path.isfile(os.path.join(directory_path, filename)):
-                file_list.append(filename)
+# Generate and append 50 random numbers between 1 and 100 to the list
+for _ in range(50):
+    random_number = random.randint(1, 100)
+    random_number_list.append(random_number)
 
-    return file_list
-
-# Provide the path to the directory you want to list files from
-directory_path = "Images"
-
-file_list = list_files_in_directory(directory_path)
-
-if file_list:
-    print("Files in the directory:")
-    for file in file_list:
-        print(file)
-else:
-    print("No files found in the directory.")
+print(random_number_list)

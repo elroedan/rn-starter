@@ -9,7 +9,7 @@ const ImageScreen = () => {
     return <View>
         
         <ImageDetail scoreImage = '6' imageSrc = {require('../../Images/tree-838667_1280.jpg')} title = "Forest"/>
-        <ImageDetail scoreImage = '6' imageSrc = {require('../../Images/tree-838667_1280.jpg')} title = "Lake"/>
+        <ImageDetail scoreImage = '610' imageSrc = {require('../../Images/tree-838667_1280.jpg')} title = "Lake"/>
         
     </View>;
      

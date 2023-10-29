@@ -1,17 +1,13 @@
+// HomePage.js
 import React from "react";
-import {
-	Text,
-	StyleSheet,
-	View,
-	Button,
-	TouchableOpacity,
-	Image,
-} from "react-native";
+import { View, Text, StyleSheet, Button } from "react-native";
 
-const HomeScreen = ({ navigation }) => {
+const HomePage = ({ navigation }) => {
 	return (
-		<View>
-			<Text style={styles.text}>Welcome To English Ease</Text>
+		<View style={styles.container}>
+			<Text style={styles.title}>Welcome To English Ease</Text>
+
+			<Text style={styles.text}></Text>
 
 			<Button
 				title="Alphabets"
@@ -42,28 +38,27 @@ const HomeScreen = ({ navigation }) => {
 			/>
 
 			<Button title="Color Game" onPress={() => navigation.navigate("Color")} />
-			<Image
-				source={{
-					uri: "https://s25.postimg.org/88ypx1fgb/lion_thumbnails.jpg",
-				}}
-				style={{ width: 400, height: 400 }}
-			/>
-			{/* Can use text, image, icon ... */}
-			{/* <TouchableOpacity onPress= {() => navigation.navigate('List')} >
-      <Text>Go to List Demo</Text>
-      <Text>List Combination</Text>
-      <Text>Go to List Demo</Text>
-      <Text>Go to List Demo</Text>
-    </TouchableOpacity> */}
 		</View>
 	);
 };
 
 const styles = StyleSheet.create({
-	text: {
-		fontSize: 20,
-		color: "green",
+	container: {
+		flex: 1,
+		justifyContent: "center",
+		alignItems: "center",
+		backgroundColor: "lightgreen", // Change the background color here
+	},
+	title: {
+		fontSize: 24,
+		fontWeight: "bold",
+		color: "black",
+	},
+	subtitle: {
+		fontSize: 18,
+		color: "gray",
+		marginVertical: 20,
 	},
 });
 
-export default HomeScreen;
+export default HomePage;
